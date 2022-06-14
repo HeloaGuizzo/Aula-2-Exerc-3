@@ -12,9 +12,9 @@ namespace Program
             double numeroHoras = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Valor salário-hora: ");
-            double salarioHora = Convert.ToInt32(Console.ReadLine());
 
-            double salario = numeroHoras * salarioHora;
+            double salario = numeroHoras * Convert.ToInt32(Console.ReadLine());
+            salario = (double)Math.Round(Convert.ToDecimal(value: salario), 2);
 
             Console.WriteLine("O salário do funcionário é: R$ " + (salario));
         }
